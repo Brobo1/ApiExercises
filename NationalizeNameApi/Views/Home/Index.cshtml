@@ -1,0 +1,19 @@
+﻿@using NationalizeNameApi.Data
+@model IndexViewModel
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <form asp-action="Index">
+        <input asp-for="Name"/>
+        <button type="submit">WHY</button>
+    </form>
+
+    @if (Model.Name != null && Model.CountryResponse != null && Model.CountryFlagResponse != null && Model.CountryFlagResponse.Any()) {
+        <p>@Model.CountryResponse.Count</p>
+        @foreach (var country in Model.CountryResponse.Country) {
+            <p>Country: @Model.CountryCode?.Common</p>
+            <p>Country Code: @country.CountryId</p>
+            <p>Probability: @country.Probability</p>
+        }
+    }
+</div>
