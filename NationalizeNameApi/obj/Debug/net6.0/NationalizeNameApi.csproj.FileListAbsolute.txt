@@ -28,3 +28,4 @@ C:\Users\lynin\OneDrive\Drive\Docs\Code\c#\AWBrights\c#\Exercises\ApiExercises\N
 C:\Users\lynin\OneDrive\Drive\Docs\Code\c#\AWBrights\c#\Exercises\ApiExercises\NationalizeNameApi\obj\Debug\net6.0\NationalizeNameApi.pdb
 C:\Users\lynin\OneDrive\Drive\Docs\Code\c#\AWBrights\c#\Exercises\ApiExercises\NationalizeNameApi\obj\Debug\net6.0\NationalizeNameApi.genruntimeconfig.cache
 C:\Users\lynin\OneDrive\Drive\Docs\Code\c#\AWBrights\c#\Exercises\ApiExercises\NationalizeNameApi\obj\Debug\net6.0\ref\NationalizeNameApi.dll
+C:\Users\lynin\OneDrive\Drive\Docs\Code\c#\AWBrights\c#\Exercises\ApiExercises\NationalizeNameApi\obj\Debug\net6.0\NationalizeNameApi.sourcelink.json
