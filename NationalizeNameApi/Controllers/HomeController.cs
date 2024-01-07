@@ -20,7 +20,7 @@ public class HomeController : Controller {
 	public IActionResult Index() {
 		return View(new IndexViewModel());
 	}
-
+	
 	[HttpPost("/")]
 	public async Task<IActionResult> Index(IndexViewModel model) {
 		var country = await _natApi.GetCountryAsync(model.Name);
