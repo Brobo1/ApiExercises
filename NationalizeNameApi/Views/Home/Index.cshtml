@@ -10,10 +10,10 @@
 
     @if (Model.Name != null && Model.CountryResponse != null && Model.CountryFlagResponse != null && Model.CountryFlagResponse.Any()) {
         <p>@Model.CountryResponse.Count</p>
-        @foreach (var country in Model.CountryResponse.Country) {
-            <p>Country: @(Model?.CountryFlagResponse?.FirstOrDefault()?.Name?.Common)</p>
-            <p>Country Code: @country.CountryId</p>
-            <p>Probability: @country.Probability</p>
+        @for (var i = 0; i < Model.CountryResponse.Country.Count; i++) {
+            <p>Country: @Model.CountryFlagResponse[i].Name.Common </p>
+            <p>Country Code: @Model.CountryResponse.Country[i].CountryId </p>
+            <p>Probability: @Model.CountryResponse.Country[i].Probability </p>
         }
     }
 </div>

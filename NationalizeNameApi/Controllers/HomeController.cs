@@ -21,6 +21,7 @@ public class HomeController : Controller {
 		return View(new IndexViewModel());
 	}
 
+/*
 	[HttpPost("/")]
 	public async Task<IActionResult> Index(IndexViewModel model) {
 		var country = await _natApi.GetCountryAsync(model.Name);
@@ -29,5 +30,28 @@ public class HomeController : Controller {
 		model.CountryFlagResponse = code;
 		return View(model);
 	}
+	*/
+	[HttpPost("/")]
+	public async Task<IActionResult> Index(IndexViewModel model) {
+		var country = await _natApi.GetCountryAsync(model.Name);
+		model.CountryResponse = country;
 
+		if (country != null && country.Country != null && country.Country.Any()) {
+			var countryFlagResponses = new List<CountryFlagResponse>();
+
+			foreach (var country1 in model.CountryResponse.Country) {
+				var code = await _countryFlagApi.GetCountryFlagAsync(country1.CountryId);
+
+				if (code != null && code.Length > 0) {
+					countryFlagResponses.Add(code[0]);
+				}
+			}
+
+			model.CountryFlagResponse = countryFlagResponses.ToArray();
+		} else {
+			Console.WriteLine("Failed to retrieve country data from Nationalize API.");
+		}
+
+		return View(model);
+	}
 }
