@@ -11,7 +11,7 @@
     @if (Model.Name != null && Model.CountryResponse != null && Model.CountryFlagResponse != null && Model.CountryFlagResponse.Any()) {
         <p>@Model.CountryResponse.Count</p>
         @foreach (var country in Model.CountryResponse.Country) {
-            <p>Country: @Model.CountryCode?.Common</p>
+            <p>Country: @(Model?.CountryFlagResponse?.FirstOrDefault()?.Name?.Common)</p>
             <p>Country Code: @country.CountryId</p>
             <p>Probability: @country.Probability</p>
         }

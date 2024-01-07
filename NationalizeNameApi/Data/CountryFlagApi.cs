@@ -19,11 +19,14 @@ public class CountryFlagApi : ICountryFlagApi {
 	}
 }
 
-public class CountryFlagResponse {
-	[JsonPropertyName("name")]
-	public Name Name { get; set; }
+public class CountryFlagResponse
+{
+    [JsonPropertyName("name")]
+    public Name Name { get; set; } 
 }
-public class Name {
-	[JsonPropertyName("common")]
-	public string Common { get; set; } = string.Empty;
+
+public class Name
+{
+    [JsonPropertyName("common")]
+    public string Common { get; set; }
 }
