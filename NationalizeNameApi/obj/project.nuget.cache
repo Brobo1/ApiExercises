@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Er3HrdJZGGLyjx0hnAFT9/quNnaULViEyyDTxFV/V+PUo0lU6dWI6e2KxIUGGJtZOZJ6tHdDiIq3Xl3fqyjoOw==",
+  "dgSpecHash": "K15c/2XxY7LLvz5YVqKI0YL7YTNfZQRVW87R2RXzYDi2Hqoh7OPhUARiTpypYALxr0Qk2a8eUPGPr4jFZYA5+g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lynin\\OneDrive\\Drive\\Docs\\Code\\c#\\AWBrights\\c#\\Exercises\\ApiExercises\\NationalizeNameApi\\NationalizeNameApi.csproj",
+  "projectFilePath": "C:\\Users\\lynin\\OneDrive\\Drive\\Docs\\Code\\cShrp\\AWBrights\\ASPNET\\ApiExercises\\NationalizeNameApi\\NationalizeNameApi.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
